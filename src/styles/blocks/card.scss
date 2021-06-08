@@ -92,6 +92,7 @@
     background-color: $button-color;
     border-radius: 5px;
     border: 1px solid $button-color;
+    transition: color 0.4s, background-color 0.4s;
   }
 
   &__button-buy:hover {
