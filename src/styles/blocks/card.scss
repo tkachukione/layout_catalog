@@ -1,8 +1,9 @@
-@import "../styles/blocks/variables.scss";
+@import "./variables.scss";
 
 .card {
+  margin-top: 50px;
   box-sizing: border-box;
-  padding: 32px 16px 16px;
+  padding: 0 16px;
   display: flex;
   flex-direction: column;
   width: 200px;
@@ -10,13 +11,17 @@
   border-radius: 5px;
 
   &__photo {
-    margin-left: 3px;
-    margin-right: 3px;
+    padding-top: 16px;
+    margin-top: 16px;
     margin-bottom: 40px;
-    display: flex;
     justify-content: center;
-    height: 134px;
-    width: 160px;
+    border: 3px solid transparent;
+    transition: transform 400ms linear;
+
+    &:hover {
+      transform: scale(1.2);
+      border: 3px solid $border-color;
+    }
   }
 
   &__name {
@@ -87,55 +92,12 @@
     text-decoration: none;
     background-color: $button-color;
     border-radius: 5px;
+    border: 1px solid $button-color;
+    transition: color 0.4s, background-color 0.4s;
   }
 
   &__button-buy:hover {
     background-color: #fff;
-    border: $button-color;
     color: $button-color;
-  }
-}
-
-@media (min-width: 1199px) {
-  .card {
-    margin-top: 50px;
-    margin-bottom: 0;
-    margin-left: 24px;
-    margin-right: 24px;
-  }
-  .card:nth-child(1),
-  .card:nth-child(5) {
-    margin-left: 128px;
-  }
-
-  .card:nth-child(4),
-  .card:nth-child(8) {
-    margin-right: 128px;
-  }
-
-  .card:nth-child(n + 5) {
-    margin-bottom: 64px;
-  }
-}
-
-@media (min-width: 1024px) and (max-width: 1199px) {
-  .card {
-    margin-top: 50px;
-    margin-bottom: 0;
-    margin-left: 24px;
-    margin-right: 24px;
-  }
-  .card:nth-child(1),
-  .card:nth-child(5) {
-    margin-left: 40px;
-  }
-
-  .card:nth-child(4),
-  .card:nth-child(8) {
-    margin-right: 40px;
-  }
-
-  .card:nth-child(n + 5) {
-    margin-bottom: 63px;
   }
 }

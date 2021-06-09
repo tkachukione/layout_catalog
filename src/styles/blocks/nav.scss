@@ -1,4 +1,4 @@
-@import "../styles/blocks/variables.scss";
+@import "./variables.scss";
 
 .navigation {
   align-items: center;
@@ -24,6 +24,7 @@
     line-height: 60px;
     text-transform: uppercase;
     display: inline-block;
+    transition: color 0.4s;
   }
 
   .is-active {
