@@ -108,9 +108,8 @@
   border-radius: 5px;
 }
 .card__photo {
-  box-sizing: border-box;
   padding-top: 16px;
-  margin-top: 15px;
+  margin-top: 16px;
   margin-bottom: 40px;
   justify-content: center;
   border: 3px solid transparent;
