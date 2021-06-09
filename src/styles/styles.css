@@ -100,7 +100,7 @@
 .card {
   margin-top: 50px;
   box-sizing: border-box;
-  padding: 16px;
+  padding: 0 16px;
   display: flex;
   flex-direction: column;
   width: 200px;
@@ -108,7 +108,9 @@
   border-radius: 5px;
 }
 .card__photo {
-  padding-top: 32px;
+  box-sizing: border-box;
+  padding-top: 16px;
+  margin-top: 15px;
   margin-bottom: 40px;
   justify-content: center;
   border: 3px solid transparent;
